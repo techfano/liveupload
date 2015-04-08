@@ -1,0 +1,16 @@
+{
+  "name": "serviceJS",
+  "version": "1.0.0",
+  "description": "Connect to Prodesign Login",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Techfano",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.12.3",
+    "jsonwebtoken": "^4.2.1",
+    "mongolab-provider": "^1.1.1"
+  }
+}
