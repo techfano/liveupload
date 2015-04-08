@@ -19,7 +19,5 @@ require.config({
 
   deps: ['app',
          'directives/sticky',
-         'factories/promisesFactory',
-         'factories/resourceFactory'
         ]
 });
