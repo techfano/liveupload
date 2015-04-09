@@ -16,7 +16,7 @@ module.exports = function(grunt) {
                 relative: true,
                 scripts: {
                     bundle: [
-                        'source/js/config/config.js'
+                        'source/js/lib/socket.io.js'
                     ]
                 },
                 styles: {
@@ -164,7 +164,8 @@ module.exports = function(grunt) {
                 'source/**/*.js',
                 'source/config/**.js',
                 'source/scripts/**/*.js',
-                'source/css/dist/**.css'],
+                'source/css/dist/**.css',
+                'views/*.html'],
         options: {
           livereload: true
         }

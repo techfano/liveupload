@@ -9,41 +9,41 @@
     <link type="text/css" rel="stylesheet" href="../css/dist/css/bootstrap.css" />
     <link type="text/css" rel="stylesheet" href="../css/attach.css" />
 
-    <body>
-
-        <nav class="navbar navbar-inverse">
-
-            <div class="container-fluid">
-
-                <div class="navbar-header">
-
-                    <a class="navbar-brand" href="">Brand</a>
-                </div>
-
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-6">
-                    <ul class="nav navbar-nav">
-                        <li class="active"><a href="">Home</a>
-                        </li>
-
-                    </ul>
-                </div>
-
-            </div>
-
-        </nav>
-
-        <div class="main-content" ng-view></div>
-
-        <footer class="row">
-            <div class="panel-footer text-center">
-                <p>Copyright (c) some year</p>
-            </div>
-        </footer>
-
-
-        <script data-main="js/main.js" src="js/lib/require.js"></script>
-    </body>
-
 </head>
+
+<body>
+
+    <nav class="navbar navbar-inverse">
+
+        <div class="container-fluid">
+
+            <div class="navbar-header">
+
+                <a class="navbar-brand" href="">Brand</a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-6">
+                <ul class="nav navbar-nav">
+                    <li class="active">
+                        <a href="">Dashboard</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+    </nav>
+
+    <div class="main-content" ng-view></div>
+
+    <script type="text/javascript" src="../js/lib/socket.io.js"></script>
+    <script data-main="js/main.js" src="js/lib/require.js"></script>
+</body>
+
+<!-- <footer class="row">
+	<div class="panel-footer text-center">
+		<p>Copyright (c) some year</p>
+	</div>
+</footer> -->
 
 </html>

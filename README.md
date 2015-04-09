@@ -1,2 +1,2 @@
 # liveupload
-upload and share files with nodejs and mongodb
+upload and share files with Angular, nodejs and mongodb

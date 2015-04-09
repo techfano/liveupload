@@ -6,7 +6,7 @@ http://code.tutsplus.com/es/tutorials/token-based-authentication-with-angularjs-
 
 var express = require('express')
 var app = express()
-var mongodb = require('mongolab-provider').init('pinbuydb', 'o5wMMdzdsFiwqsD6Pd-gh2-rCRmUnk4N');
+var mongodb = require('mongolab-provider').init('liveupload', 'o5wMMdzdsFiwqsD6Pd-gh2-rCRmUnk4N');
 var jwt = require('jsonwebtoken');
 var errorResponseText ='Error in authentication, user or Password.';
 var expiredMinutesSession = 600;
@@ -45,7 +45,7 @@ app.get('/api/auth/login/:user/:key', function(req, res) {
 	var params = {
 
 		where:{
-			username:req.params.user,
+			name:req.params.user,
 			password:req.params.key
 		}
 
@@ -59,7 +59,7 @@ app.get('/api/auth/login/:user/:key', function(req, res) {
 
 				var token = jwt.sign(data[0], hashPhrase,{ expiresInMinutes: expiredMinutesSession });
 
-				if(req.params.user === data[0].username && req.params.key === data[0].password){
+				if(req.params.user === data[0].name && req.params.key === data[0].password){
 					auth.token = token;
 					res.send(auth);				
 				}else{				
